@@ -3,12 +3,12 @@ var canvasContext
 
 var ballX = 400
 var ballY = 300
-var ballSpeedX = -5
-var ballSpeedY = 5
+var ballSpeedX = initialXSpeed = -10
+var ballSpeedY = initialYSpeed = 10
 
 var lPaddleY = 250
 var rPaddleY = 350
-var rPaddleSpeed = 6
+var rPaddleSpeed = 20
 var paddleX = 5
 
 var lScore = 0
@@ -63,8 +63,8 @@ function reset()
 
   ballX = canvas.width / 2 - 5
   ballY = canvas.height / 2 - 5
-  ballSpeedX = (ballSpeedX < 0) ? -5:5
-  ballSpeedY = 5
+  ballSpeedX = (ballSpeedX < 0) ? initialXSpeed:-initialXSpeed
+  ballSpeedY = initialYSpeed
 }
 
 function drawNet()
@@ -115,7 +115,7 @@ function hit()
     ballSpeedX *= -1
     ballSpeedX += .3
     deltaY = ballY - (lPaddleY + PADDLE_HEIGHT/2)
-    ballSpeedY = deltaY * .13
+    ballSpeedY = deltaY * .3
   }
   else
   {
