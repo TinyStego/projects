@@ -1,5 +1,5 @@
-platform = {width=love.graphics.getWidth() / 2, height=200, x=200,
-y=love.graphics.getHeight() / 2 - 100} player = {width=20, height=50, x=20, y=20, speed=250} bullets = {} up = true
+platform = {width=love.graphics.getWidth() / 2, height=25, x=200, y=love.graphics.getHeight() / 2 - 100}
+player = {width=20, height=50, x=20, y=20, speed=250} bullets = {} up = true
 
 function love.load()
 --   gravity = 350
@@ -22,13 +22,13 @@ function love.update(dt)
    -- if so, snap the player to that edge without moving them further, if not, move normally
    if love.keyboard.isDown("d") then
       if (player.x + player.width + (player.speed * dt) > platform.x and player.x <= platform.x)
-	and ((player.y > platform.y and player.y < platform.y + platform.height)
-	or (player.y + player.height > platform.y and player.y + player.height < platform.y + platform.height)) then
+	and ((platform.y > player.y and platform.y < player.y + player.height)
+	or (platform.y + platform.height > player.y and platform.y + platform.height < player.y + player.height)) then
 	 player.x = platform.x - player.width
       elseif (player.x + player.width + (player.speed * dt) >= love.graphics.getWidth()) then
 	 player.x = love.graphics.getWidth() - player.width
       else
-	 player.x = player.x + player.speed * dt
+	 player.x = player.x * dt
       end
    elseif love.keyboard.isDown("a") then
       if (player.x - (player.speed * dt) < platform.x + platform.width and player.x + player.width >= platform.x + platform.width)
@@ -46,7 +46,7 @@ function love.update(dt)
    --/* Check on the vertical axis if the player will collide with the platform/edge BEFORE the player moves,
    -- if so, snap the player to that edge without moving them further, if not, move normally
    if love.keyboard.isDown("w") then
-      if (player.x >= platform.x - player.width
+      if (player.x > platform.x - player.width
 	     and player.x + player.width <= platform.x + platform.width + player.width - 5)
       and (player.y - (player.speed * dt) <= platform.y + platform.height and player.y + player.height >= platform.y + platform.height) then
 	 player.y = platform.y + platform.height
@@ -56,7 +56,7 @@ function love.update(dt)
 	 player.y = player.y - player.speed * dt
       end
    elseif love.keyboard.isDown("s") then
-      if (player.x >= platform.x - player.width
+      if (player.x > platform.x - player.width
 	     and player.x + player.width <= platform.x + platform.width + player.width - 5)
       and (player.y + player.height + (player.speed * dt) >= platform.y and player.y <= platform.y) then
 	 player.y = platform.y - player.height
@@ -93,3 +93,7 @@ function love.draw()
    for i,o in ipairs(bullets) do love.graphics.circle("fill", o.x, o.y, 10, 8) end
    --*/
 end
+
+
+
+      
