@@ -1,0 +1,16 @@
+[gd_scene format=2]
+
+[node name="Label" type="Label"]
+
+margin_right = 40.0
+margin_bottom = 14.0
+rect_clip_content = false
+mouse_filter = 2
+size_flags_vertical = 0
+text = "Hello, World!
+"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
