@@ -13,12 +13,10 @@ int main(int args, char** argv)
   while(sentence[count] != '\0')
     count++;
 
-  printf("%d\n", count);
-  printf("%c\n", sentence[count - 2]);
-  for(i = 0; i < count - 2; i++)
+  for(i = 0; i < count - 1; i++)
   {
     j = 0;
-    while(sentence[i] != ' ')
+    while((sentence[i] != ' ') && (sentence[i] != '\0'))
     {
       word[j] = sentence[i];
       i++;
