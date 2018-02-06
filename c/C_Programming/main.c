@@ -2,18 +2,25 @@
 
 int main(int args, char** argv)
 {
-  int num, i, j;
+  int height, rows, j;
 
-  printf("Enter number of lines: ");
-  scanf("%d", &num);
+  printf("Enter height of triangle: ");
+  scanf("%d", &height);
 
-  for(i = 0; i < num; i++)
+  for(rows = 0; rows < 2 * height - 1; rows++)
   {
-    for(j = 0; j <= i; j++)
+    if(rows <= height - 1)
     {
-      printf("*");
+      for(j = 0; j <= rows; j++)
+        printf("*");
+    }
+    else
+    {
+      for(j = 1; j < 2 * height - rows; j++)
+        printf("*");
     }
     printf("\n");
   }
+
   return 0;
 }
