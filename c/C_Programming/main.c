@@ -3,22 +3,31 @@
 
 int main(int args, char** argv)
 {
-  char phrase[100], new_phrase[100];
+  char sentence[100];
+  char word[50];
   int i, j, count = 0;
 
-  printf("Enter a string: ");
-  fgets(phrase,sizeof(phrase),stdin);
+  printf("Enter a sentence: ");
+  fgets(sentence, sizeof(sentence), stdin);
 
-  while(strcmp(&phrase[count], "\0") != 0)
-    count ++;
+  while(sentence[count] != '\0')
+    count++;
 
-  for(j = 0, i = count - 1; j < count; j++, i--)
+  printf("%d\n", count);
+  printf("%c\n", sentence[count - 2]);
+  for(i = 0; i < count - 2; i++)
   {
-    new_phrase[j] = phrase[i];
+    j = 0;
+    while(sentence[i] != ' ')
+    {
+      word[j] = sentence[i];
+      i++;
+      j++;
+    }
+    word[j] = '\0';
+    printf("%s\n", word);
   }
 
-  new_phrase[j] = '\0';
-  printf("%s", new_phrase);
 
   return 0;
 }
