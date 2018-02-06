@@ -2,23 +2,17 @@
 
 int main(int args, char** argv)
 {
-  int height, rows, j;
+  int height, spaces, stars, i, j;
 
   printf("Enter height of triangle: ");
   scanf("%d", &height);
 
-  for(rows = 0; rows < 2 * height - 1; rows++)
+  for(i = height, spaces = height - 1, stars = 1; i > 0; i--, spaces--, stars += 2)
   {
-    if(rows <= height - 1)
-    {
-      for(j = 0; j <= rows; j++)
-        printf("*");
-    }
-    else
-    {
-      for(j = 1; j < 2 * height - rows; j++)
-        printf("*");
-    }
+    for(j = 0; j < spaces; j++)
+      printf(" ");
+    for(j = 0; j < stars; j++)
+      printf("*");
     printf("\n");
   }
 
