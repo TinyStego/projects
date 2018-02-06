@@ -1,31 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(int args, char** argv)
 {
-  char sentence[100];
-  char word[50];
-  int i, j, count = 0;
+  int num, i, j;
 
-  printf("Enter a sentence: ");
-  fgets(sentence, sizeof(sentence), stdin);
+  printf("Enter number of lines: ");
+  scanf("%d", &num);
 
-  while(sentence[count] != '\0')
-    count++;
-
-  for(i = 0; i < count - 1; i++)
+  for(i = 0; i < num; i++)
   {
-    j = 0;
-    while((sentence[i] != ' ') && (sentence[i] != '\0'))
+    for(j = 0; j <= i; j++)
     {
-      word[j] = sentence[i];
-      i++;
-      j++;
+      printf("*");
     }
-    word[j] = '\0';
-    printf("%s\n", word);
+    printf("\n");
   }
-
-
   return 0;
 }
