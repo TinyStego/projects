@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = lispy.c
+OBJS = lispy.c mpc.c
 
 #CC specifies which compiler we're using
 CC = gcc
@@ -9,7 +9,7 @@ CC = gcc
 COMPILER_FLAGS = -Wall
 
 #LINKER_FLAGS specifies the libraries we're linking against
-LINKER_FLAGS = -ledit
+LINKER_FLAGS = -ledit -lm
 
 #OBJ_NAME specifies the name of our executable
 OBJ_NAME = lispy
