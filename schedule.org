@@ -1,0 +1,105 @@
+* Core CS
+** Introduction to CS
+*** CS50
+**** TODO CS50: Study for 2.5 hours
+     SCHEDULED: <2018-02-13 Tue +1w>
+**** TODO CS50: Study for 2.5 hours
+     SCHEDULED: <2018-02-15 Thu +1w>
+**** TODO CS50: Study for 2.5 hours
+     SCHEDULED: <2018-02-18 Sun +1w>
+**** TODO CS50: Study for 1.5 hours
+     SCHEDULED: <2018-02-14 Wed +1w>
+**** TODO CS50: Study for 1 hour
+     SCHEDULED: <2018-02-16 Fri +1w>
+** Core Programming
+*** Simple Data
+**** TODO Simple Data: Study for 2 hours
+     SCHEDULED: <2018-02-13 Tue +1w>
+**** TODO Simple Data: Study for 2 hours
+     SCHEDULED: <2018-02-15 Thu +1w>
+**** TODO Simple Data: Study for 2 hours
+     SCHEDULED: <2018-02-18 Sun +1w>
+**** TODO Simple Data: Study for 1.5 hours
+     SCHEDULED: <2018-02-14 Wed +1w>
+**** TODO Simple Data: Study for 0.8 hours
+     SCHEDULED: <2018-02-16 Fri +1w>
+*** Complex Data
+*** Data Abstraction
+*** Object-Oriented Design
+*** Programming Languages Part A
+*** Programming Languages Part A
+** Core Math
+*** Essence of Linear Algebra
+**** TODO Essence of Linear Algebra: Study for 1.25 hours
+     SCHEDULED: <2018-02-13 Tue>
+**** TODO Essence of Linear Algebra: Study for 1.25 hours
+     SCHEDULED: <2018-02-15 Thu>
+**** TODO Essence of Linear Algebra: Study for 1.25 hours
+     SCHEDULED: <2018-02-18 Sun>
+*** Linear Algebra
+*** Calculus One
+*** Calculus Two
+*** Mathematics for CS
+** Core Systems
+*** Build a Modern Computer Part I
+**** TODO Build a Modern Computer I: Study for 1.75 hours
+     SCHEDULED: <2018-02-13 Tue +1w>
+**** TODO Build a Modern Computer I: Study for 1.75 hours
+     SCHEDULED: <2018-02-15 Thu +1w>
+**** TODO Build a Modern Computer I: Study for 1.75 hours
+     SCHEDULED: <2018-02-18 Sun +1w>
+**** TODO Build a Modern Computer I: Study for 1.5 hours
+     SCHEDULED: <2018-02-14 Wed +1w>
+**** TODO Build a Modern Computer I: Study for 0.7 hours
+     SCHEDULED: <2018-02-16 Fri +1w>
+*** Build a Modern Computer Part II
+*** Introduction to Computer Networking
+*** Hack the Kernel
+** Core Theory
+*** Algorithms Part I
+*** Algorithms Part II
+** Core Applications
+*** Databases
+*** Machine Learning
+*** Computer Graphics
+*** Cryptography I
+*** Software Engineering: Introduction
+*** Software Development Capstone Project
+
+* Advanced CS
+** Advanced Programming
+*** Compilers
+*** Software Debugging
+*** Software Testing
+*** LAFF: Programming for Corectness
+*** Introduction to Parallel Programming
+*** Software Architecture and Design
+** Advanced Math
+*** Calculus: Parametric Equations and Polar Coordinates
+*** Multivariable Calculus
+*** Introduction to Probability
+** Advanced Systems
+*** Electricity and Magnetism Part I
+*** Electricity and Magnetism Part II
+*** Computation Structures 1: Digital Circuits
+*** Computation Structures 2: Computer Architecture
+*** Computation Structures 3: Computer Organization
+** Advanced Theory
+*** Introduction to Logic
+*** Automata Theory
+*** Reliable Distributed Systems Part 1
+*** Reliable Distributed Systems Part 2
+*** Computational Geometry
+*** Introduction to Formal Concept Analysis
+*** Game Theory
+** Advanced Applications
+*** Robotics(Specialization)
+*** Data Mining(Specialization)
+*** Big Data(Specialization)
+*** Internet of Things(Specialization)
+*** Cloud Computing(Specialization)
+*** Full Stack Web Development(Specialization)
+*** Data Science(Specialization)
+*** Functional Programming in Scala(Specialization)
+
+* Final Project
